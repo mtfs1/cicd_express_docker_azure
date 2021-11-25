@@ -12,10 +12,7 @@
     "start": "node src/index.js",
     "start:dev": "npm run lint && nodemon --exec node src/index.js --unhandled-rejections=warn",
     "test": "jest --detectOpenHandles --coverage",
-    "lint": "eslint src/**/*.js --fix",
-    "docker-build": "sudo docker build --rm --pull -f ./Dockerfile -t 'matheusregistry.azurecr.io/expressserver' .",
-    "docker-push": "sudo docker image push matheusregistry.azurecr.io/expressserver",
-    "azure-reset": "az webapp restart --resource-group matheusresourcegroup --name matheus-express-server-docker"
+    "lint": "eslint src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
